@@ -9,7 +9,7 @@ function Header() {
       style={{ backgroundImage: `url(${headerImage})` }}
     >
       <div className="header-content">
-        <h1>Welcome to Our Website</h1>
+      <h1 style={{ color: '#FFEFD5' }}>Phoenix Players Earlsdon</h1>
       </div>
     </header>
   );
