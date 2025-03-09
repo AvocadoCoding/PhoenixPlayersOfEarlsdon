@@ -1,0 +1,17 @@
+.site-header {
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 400px; /* Adjust height as needed */
+  }
+  
+  .header-content {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Optional overlay for readability */
+    padding: 1rem;
+    border-radius: 8px;
+  }
