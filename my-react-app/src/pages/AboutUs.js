@@ -7,7 +7,7 @@ function AboutUs() {
       <Navbar />
       <div className="page-content" style={{ padding: '1rem' }}>
         <h2>About Us</h2>
-        <p>Information about your organization will go here.</p>
+        <p>Information about organisation will go here.</p>
       </div>
     </div>
   );
