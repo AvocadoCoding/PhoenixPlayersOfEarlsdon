@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/PhoenixPlayersOfEarlsdon/static/css/main.deea4553.chunk.css",
+    "main.js": "/PhoenixPlayersOfEarlsdon/static/js/main.81da968e.chunk.js",
+    "main.js.map": "/PhoenixPlayersOfEarlsdon/static/js/main.81da968e.chunk.js.map",
+    "runtime-main.js": "/PhoenixPlayersOfEarlsdon/static/js/runtime-main.bed09fb0.js",
+    "runtime-main.js.map": "/PhoenixPlayersOfEarlsdon/static/js/runtime-main.bed09fb0.js.map",
+    "static/js/2.6d79a401.chunk.js": "/PhoenixPlayersOfEarlsdon/static/js/2.6d79a401.chunk.js",
+    "static/js/2.6d79a401.chunk.js.map": "/PhoenixPlayersOfEarlsdon/static/js/2.6d79a401.chunk.js.map",
+    "static/js/3.4451de7f.chunk.js": "/PhoenixPlayersOfEarlsdon/static/js/3.4451de7f.chunk.js",
+    "static/js/3.4451de7f.chunk.js.map": "/PhoenixPlayersOfEarlsdon/static/js/3.4451de7f.chunk.js.map",
+    "index.html": "/PhoenixPlayersOfEarlsdon/index.html",
+    "precache-manifest.f2e01f42b0070f78549e9dbc9763c2c2.js": "/PhoenixPlayersOfEarlsdon/precache-manifest.f2e01f42b0070f78549e9dbc9763c2c2.js",
+    "service-worker.js": "/PhoenixPlayersOfEarlsdon/service-worker.js",
+    "static/css/main.deea4553.chunk.css.map": "/PhoenixPlayersOfEarlsdon/static/css/main.deea4553.chunk.css.map",
+    "static/js/2.6d79a401.chunk.js.LICENSE.txt": "/PhoenixPlayersOfEarlsdon/static/js/2.6d79a401.chunk.js.LICENSE.txt",
+    "static/media/Header.png": "/PhoenixPlayersOfEarlsdon/static/media/Header.71090870.png",
+    "static/media/Logo.png": "/PhoenixPlayersOfEarlsdon/static/media/Logo.7efa7bdd.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bed09fb0.js",
+    "static/js/2.6d79a401.chunk.js",
+    "static/css/main.deea4553.chunk.css",
+    "static/js/main.81da968e.chunk.js"
+  ]
+}
