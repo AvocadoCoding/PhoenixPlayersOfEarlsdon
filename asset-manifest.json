@@ -1,26 +1,17 @@
 {
   "files": {
-    "main.css": "/PhoenixPlayersOfEarlsdon/static/css/main.deea4553.chunk.css",
-    "main.js": "/PhoenixPlayersOfEarlsdon/static/js/main.81da968e.chunk.js",
-    "main.js.map": "/PhoenixPlayersOfEarlsdon/static/js/main.81da968e.chunk.js.map",
-    "runtime-main.js": "/PhoenixPlayersOfEarlsdon/static/js/runtime-main.bed09fb0.js",
-    "runtime-main.js.map": "/PhoenixPlayersOfEarlsdon/static/js/runtime-main.bed09fb0.js.map",
-    "static/js/2.6d79a401.chunk.js": "/PhoenixPlayersOfEarlsdon/static/js/2.6d79a401.chunk.js",
-    "static/js/2.6d79a401.chunk.js.map": "/PhoenixPlayersOfEarlsdon/static/js/2.6d79a401.chunk.js.map",
-    "static/js/3.4451de7f.chunk.js": "/PhoenixPlayersOfEarlsdon/static/js/3.4451de7f.chunk.js",
-    "static/js/3.4451de7f.chunk.js.map": "/PhoenixPlayersOfEarlsdon/static/js/3.4451de7f.chunk.js.map",
+    "main.css": "/PhoenixPlayersOfEarlsdon/static/css/main.d5475990.css",
+    "main.js": "/PhoenixPlayersOfEarlsdon/static/js/main.b6fe7c7b.js",
+    "static/js/453.ad6eb26e.chunk.js": "/PhoenixPlayersOfEarlsdon/static/js/453.ad6eb26e.chunk.js",
+    "static/media/Logo.png": "/PhoenixPlayersOfEarlsdon/static/media/Logo.44b7bb53f85ef9997bc3.png",
+    "static/media/Header.png": "/PhoenixPlayersOfEarlsdon/static/media/Header.3f9d83c8472818c6ac7f.png",
     "index.html": "/PhoenixPlayersOfEarlsdon/index.html",
-    "precache-manifest.f2e01f42b0070f78549e9dbc9763c2c2.js": "/PhoenixPlayersOfEarlsdon/precache-manifest.f2e01f42b0070f78549e9dbc9763c2c2.js",
-    "service-worker.js": "/PhoenixPlayersOfEarlsdon/service-worker.js",
-    "static/css/main.deea4553.chunk.css.map": "/PhoenixPlayersOfEarlsdon/static/css/main.deea4553.chunk.css.map",
-    "static/js/2.6d79a401.chunk.js.LICENSE.txt": "/PhoenixPlayersOfEarlsdon/static/js/2.6d79a401.chunk.js.LICENSE.txt",
-    "static/media/Header.png": "/PhoenixPlayersOfEarlsdon/static/media/Header.71090870.png",
-    "static/media/Logo.png": "/PhoenixPlayersOfEarlsdon/static/media/Logo.7efa7bdd.png"
+    "main.d5475990.css.map": "/PhoenixPlayersOfEarlsdon/static/css/main.d5475990.css.map",
+    "main.b6fe7c7b.js.map": "/PhoenixPlayersOfEarlsdon/static/js/main.b6fe7c7b.js.map",
+    "453.ad6eb26e.chunk.js.map": "/PhoenixPlayersOfEarlsdon/static/js/453.ad6eb26e.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.bed09fb0.js",
-    "static/js/2.6d79a401.chunk.js",
-    "static/css/main.deea4553.chunk.css",
-    "static/js/main.81da968e.chunk.js"
+    "static/css/main.d5475990.css",
+    "static/js/main.b6fe7c7b.js"
   ]
 }
