@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/PhoenixPlayersOfEarlsdon/static/css/main.d5475990.css",
-    "main.js": "/PhoenixPlayersOfEarlsdon/static/js/main.b6fe7c7b.js",
+    "main.js": "/PhoenixPlayersOfEarlsdon/static/js/main.e881fe4c.js",
     "static/js/453.ad6eb26e.chunk.js": "/PhoenixPlayersOfEarlsdon/static/js/453.ad6eb26e.chunk.js",
     "static/media/Logo.png": "/PhoenixPlayersOfEarlsdon/static/media/Logo.44b7bb53f85ef9997bc3.png",
     "static/media/Header.png": "/PhoenixPlayersOfEarlsdon/static/media/Header.3f9d83c8472818c6ac7f.png",
     "index.html": "/PhoenixPlayersOfEarlsdon/index.html",
     "main.d5475990.css.map": "/PhoenixPlayersOfEarlsdon/static/css/main.d5475990.css.map",
-    "main.b6fe7c7b.js.map": "/PhoenixPlayersOfEarlsdon/static/js/main.b6fe7c7b.js.map",
+    "main.e881fe4c.js.map": "/PhoenixPlayersOfEarlsdon/static/js/main.e881fe4c.js.map",
     "453.ad6eb26e.chunk.js.map": "/PhoenixPlayersOfEarlsdon/static/js/453.ad6eb26e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d5475990.css",
-    "static/js/main.b6fe7c7b.js"
+    "static/js/main.e881fe4c.js"
   ]
 }
