@@ -6,5 +6,16 @@
       "/assets/*",
       "/*.{js,css,map,ico,png,jpg,jpeg,svg,webp,txt,json,woff,woff2,ttf,eot}"
     ]
-  }
+  },
+  "globalHeaders": {
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "strict-origin-when-cross-origin"
+  },
+  "routes": [
+    {
+      "route": "/static/*",
+      "headers": { "cache-control": "public, max-age=31536000, immutable" }
+    }
+  ]
 }

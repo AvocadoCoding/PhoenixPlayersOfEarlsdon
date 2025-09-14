@@ -10,7 +10,7 @@ import Header from './components/Header';
 
 function App() {
   return (
-    <Router basename="/PhoenixPlayersOfEarlsdon">
+    <Router>
       <div>
         <Header />
         <Routes>
@@ -26,3 +26,4 @@ function App() {
 }
 
 export default App;
+
