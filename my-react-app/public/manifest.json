@@ -3,9 +3,9 @@
   "name": "Phoenix Players Earlsdon",
   "icons": [
     {
-      "src": "Logo.png",
+      "src": "Logo.jpg",
       "sizes": "192x192",
-      "type": "image/png",
+      "type": "image/jpg",
       "purpose": "any"
     }
   ],
