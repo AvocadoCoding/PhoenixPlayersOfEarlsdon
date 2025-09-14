@@ -1,17 +1,37 @@
 .site-header {
-    background-size: cover;
-    background-position: center;
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    height: 400px; /* Adjust height as needed */
-  }
-  
-  .header-content {
-    text-align: center;
-    background: rgba(0, 0, 0, 0.5); /* Optional overlay for readability */
-    padding: 1rem;
-    border-radius: 8px;
-  }
+  position: relative;
+  width: 100%;
+  background-color: #333; /* fallback/dark background */
+  display: flex;
+  justify-content: center;
+}
+
+/* background image with capped width */
+.site-header::before {
+  content: "";
+  display: block;
+  width: 100%;
+  max-width: 800px;      /* cap image width */
+  height: 300px;          /* adjust to fit your design */
+  background-image: url("../assets/images/Header.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* overlay content */
+.header-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;          /* match image height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-content h1 {
+  color: #FFEFD5;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6); /* better readability */
+}
