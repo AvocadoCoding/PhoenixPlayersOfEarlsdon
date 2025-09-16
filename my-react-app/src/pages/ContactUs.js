@@ -23,6 +23,8 @@ function ContactUs() {
           CV5 6NF
         </address>
 
+        <p>The hall is circled in red on the map below (located just behind the Church)</p>
+
         {/* ✅ Map image below with extra spacing above */}
         <img 
           src={Map} 
