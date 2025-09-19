@@ -1,31 +1,33 @@
+/* 1) Reset default margins that can cause visual drift */
+html, body {
+  margin: 0;
+}
+
+/* 2) Full-width colour bar; no flex needed */
 .site-header {
   width: 100%;
-  background-color: #333; /* fallback background */
-  display: flex;
-  justify-content: center;
+  background-color: #333; /* or #343541 */
 }
 
+/* 3) The capped image container, truly centered */
 .header-inner {
   position: relative;
-  width: 90%;         /* responsive width */
-  max-width: 800px;   /* cap image width */
-  height: 300px;      /* default height */
+  width: min(95%, 800px);  /* responsive + hard cap */
+  height: 300px;
+  margin: 0 auto;          /* <-- true centering */
   background-image: url("../assets/images/Header.png");
   background-size: cover;
-  background-position: center;
+  background-position: center; /* see optional tweak below */
 }
 
+/* 4) Overlay content, perfectly centered + multiline safe */
 .header-content {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
+  inset: 0;                /* top:0; right:0; bottom:0; left:0 */
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center; /* keep multiline text centered */
+  text-align: center;
   padding: 0 1rem;
 }
 
@@ -36,25 +38,15 @@
   text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
 }
 
-/* Responsive adjustments */
+/* Responsive niceties */
 @media (max-width: 768px) {
-  .header-inner {
-    height: 220px; /* shorter on tablets */
-  }
-
-  .header-content h1 {
-    font-size: 2rem; /* scale down heading */
-  }
+  .header-inner { height: 220px; }
+  .header-content h1 { font-size: 2rem; }
 }
-
 @media (max-width: 480px) {
-  .header-inner {
-    height: 180px; /* shorter on phones */
-  }
-
-  .header-content h1 {
-    font-size: 1.6rem; /* smaller heading for narrow screens */
-  }
+  .header-inner { height: 180px; }
+  .header-content h1 { font-size: 1.6rem; }
 }
+
 
 
