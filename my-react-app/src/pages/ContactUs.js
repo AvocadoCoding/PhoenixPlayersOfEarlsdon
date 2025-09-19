@@ -9,7 +9,7 @@ function ContactUs() {
       <div className="page-content" style={{ padding: '1rem' }}>
         <h2>Contact Us</h2>
         <p>
-          If you're interested in joining please contact Alan on <a href="tel:07549168791">07549168791</a>.
+          If you're interested in joining or for any other enquiries please e-mail us as at <a href="phoenixplayers-earlsdon@hotmail.com">phoenixplayers-earlsdon@hotmail.com</a>.
         </p>
 
         <p>The group rehearsals and plays are located at the Methodist Church Hall in Earlsdon:</p>
