@@ -24,6 +24,13 @@
   color: white;
 }
 
+body {
+  margin: 0;
+  background-color: #f8f8f5; /* soft off-white */
+  color: #222;              /* default text colour */
+  font-family: Arial, sans-serif;
+}
+
 .App-link {
   color: #61dafb;
 }
