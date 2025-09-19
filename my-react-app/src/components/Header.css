@@ -1,42 +1,60 @@
 .site-header {
-  position: relative;
   width: 100%;
-  background-color: #333; /* fallback/dark background */
+  background-color: #333; /* fallback background */
   display: flex;
   justify-content: center;
 }
 
-/* background image with capped width */
-.site-header::before {
-  content: "";
-  display: block;
-  width: 100%;
-  max-width: 800px;      /* cap image width */
-  height: 300px;         /* adjust to fit your design */
+.header-inner {
+  position: relative;
+  width: 90%;         /* responsive width */
+  max-width: 800px;   /* cap image width */
+  height: 300px;      /* default height */
   background-image: url("../assets/images/Header.png");
   background-size: cover;
   background-position: center;
 }
 
-/* overlay content */
 .header-content {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 300px;         /* match image height */
+  height: 100%;
+
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /* ✅ keeps multi-line text centered */
-  text-align: center; 
-  padding: 0 1rem;       /* stops text touching screen edges on mobile */
+  text-align: center; /* keep multiline text centered */
+  padding: 0 1rem;
 }
 
 .header-content h1 {
   color: #FFEFD5;
   font-size: 2.5rem;
   margin: 0;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.6); /* better readability */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header-inner {
+    height: 220px; /* shorter on tablets */
+  }
+
+  .header-content h1 {
+    font-size: 2rem; /* scale down heading */
+  }
+}
+
+@media (max-width: 480px) {
+  .header-inner {
+    height: 180px; /* shorter on phones */
+  }
+
+  .header-content h1 {
+    font-size: 1.6rem; /* smaller heading for narrow screens */
+  }
+}
+
+
