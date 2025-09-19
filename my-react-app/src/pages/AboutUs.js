@@ -9,8 +9,8 @@ function AboutUs() {
         <h2>About Us</h2>
           <p>
             The group 'morphed' into the Phoenix Players out of the drama group
-            'The Magdalene Players' who operated from Saint Magdalene church by
-            Hearsall Common. The Magdalene Players had been going for many years
+            'The Magdalen Players' who operated from Saint Magdalen church by
+            Hearsall Common. The Magdalen Players had been going for many years
             but in 1985 both Paul and then Dave joined and with further people,
             like John, Jan, Jennie the group eventually became Phoenix and moved
             to the Earlsdon Methodist Hall in 2000.

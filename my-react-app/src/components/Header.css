@@ -12,7 +12,7 @@
   display: block;
   width: 100%;
   max-width: 800px;      /* cap image width */
-  height: 300px;          /* adjust to fit your design */
+  height: 300px;         /* adjust to fit your design */
   background-image: url("../assets/images/Header.png");
   background-size: cover;
   background-position: center;
@@ -24,14 +24,19 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 300px;          /* match image height */
+  height: 300px;         /* match image height */
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* ✅ keeps multi-line text centered */
+  text-align: center; 
+  padding: 0 1rem;       /* stops text touching screen edges on mobile */
 }
 
 .header-content h1 {
   color: #FFEFD5;
   font-size: 2.5rem;
+  margin: 0;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.6); /* better readability */
 }
