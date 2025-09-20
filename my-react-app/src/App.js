@@ -7,6 +7,7 @@ import Gallery from './pages/Gallery';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import Header from './components/Header';
+import './App.css';
 
 function App() {
   return (
