@@ -18,7 +18,7 @@ const members = [
   { name: 'Jane', img: JaneImg, bio: 'Behind the scenes manager; keeps the logistics running like clockwork.' },
   { name: 'Jennie', img: JennieImg, bio: 'Energetic actress and treasurer, keeps the plays and books balanced.' },
   { name: 'John', img: JohnImg, bio: 'Resident lighting and audio technician; brings the play to life.' },
-  { name: 'Paul', img: PaulImg, bio: 'Long time member and actor; adapts to any play.' },
+  { name: 'Paul', img: PaulImg, bio: 'Long time member and experienced actor.' },
   { name: 'Sarah', img: SarahImg, bio: 'Natural lead and actress; shines on stage.' },
   { name: 'Wendy', img: WendyImg, bio: 'Actress, prompt and tea-urn hero; keeps the script flowing and cups full.' },
 ];
