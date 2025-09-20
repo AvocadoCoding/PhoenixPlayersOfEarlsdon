@@ -1,6 +1,28 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 
+import AlanImg from '../assets/images/members/Alan.jpg';
+import DaveImg from '../assets/images/members/Dave.jpg';
+import JanImg from '../assets/images/members/Jan.jpg';
+import JaneImg from '../assets/images/members/Jane.jpg';
+import JennieImg from '../assets/images/members/Jennie.jpg';
+import JohnImg from '../assets/images/members/John.jpg';
+import PaulImg from '../assets/images/members/Paul.jpg';
+import SarahImg from '../assets/images/members/Sarah.jpg';
+import WendyImg from '../assets/images/members/Wendy.jpg';
+
+const members = [
+  { name: 'Alan', img: AlanImg, bio: 'Versatile actor and set-building enthusiast, brings characters (and sets) to life.' },
+  { name: 'Dave', img: DaveImg, bio: 'Long-time member and director, keeps rehearsals tight and productions on time.' },
+  { name: 'Jan', img: JanImg, bio: 'Props and costumes wizard; if it sparkles or fits perfectly, it’s probably Jan.' },
+  { name: 'Jane', img: JaneImg, bio: 'Behind the scenes manager; keeps the logistics running like clockwork.' },
+  { name: 'Jennie', img: JennieImg, bio: 'Energetic actress and treasurer, keeps the plays and books balanced.' },
+  { name: 'John', img: JohnImg, bio: 'Resident lighting and audio technician; brings the play to life.' },
+  { name: 'Paul', img: PaulImg, bio: 'Long time member and actor; adapts to any play.' },
+  { name: 'Sarah', img: SarahImg, bio: 'Natural lead and actress; shines on stage.' },
+  { name: 'Wendy', img: WendyImg, bio: 'Actress, prompt and tea-urn hero; keeps the script flowing and cups full.' },
+];
+
 function AboutUs() {
   return (
     <div>
@@ -33,7 +55,18 @@ function AboutUs() {
           </p>
 
         <h2>Current Members</h2>
-        
+
+        {/* Members grid */}
+        <div className="members-grid">
+          {members.map((m) => (
+            <article key={m.name} className="member-card">
+              <img src={m.img} alt={`${m.name} — Phoenix Players member`} className="member-photo" />
+              <h3 className="member-name">{m.name}</h3>
+              <p className="member-bio">{m.bio}</p>
+            </article>
+          ))}
+        </div>
+
       </div>
     </div>
   );
