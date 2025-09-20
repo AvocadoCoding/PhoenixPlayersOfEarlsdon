@@ -1,15 +1,15 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 
-import AlanImg from '../assets/images/members/Alan.jpg';
-import DaveImg from '../assets/images/members/Dave.jpg';
-import JanImg from '../assets/images/members/Jan.jpg';
-import JaneImg from '../assets/images/members/Jane.jpg';
-import JennieImg from '../assets/images/members/Jennie.jpg';
-import JohnImg from '../assets/images/members/John.jpg';
-import PaulImg from '../assets/images/members/Paul.jpg';
-import SarahImg from '../assets/images/members/Sarah.jpg';
-import WendyImg from '../assets/images/members/Wendy.jpg';
+import AlanImg from '../assets/images/members/Alan.JPG';
+import DaveImg from '../assets/images/members/Dave.JPG';
+import JanImg from '../assets/images/members/Jan.JPG';
+import JaneImg from '../assets/images/members/Jane.JPG';
+import JennieImg from '../assets/images/members/Jennie.JPG';
+import JohnImg from '../assets/images/members/John.JPG';
+import PaulImg from '../assets/images/members/Paul.JPG';
+import SarahImg from '../assets/images/members/Sarah.JPG';
+import WendyImg from '../assets/images/members/Wendy.JPG';
 
 const members = [
   { name: 'Alan', img: AlanImg, bio: 'Versatile actor and set-building enthusiast, brings characters (and sets) to life.' },
