@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+
+/* Global background */
+html, body {
+  margin: 0;
+  background-color: #F1E9D2; /* parchment beige */
+  color: #222;
+  font-family: Arial, sans-serif;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -24,12 +33,6 @@
   color: white;
 }
 
-body {
-  margin: 0;
-  background-color: #9f1b92; /* warm parchment beige */
-  color: #222;              /* default text colour */
-  font-family: Arial, sans-serif;
-}
 
 .App-link {
   color: #61dafb;
