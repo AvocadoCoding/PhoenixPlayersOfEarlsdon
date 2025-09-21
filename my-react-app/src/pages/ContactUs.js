@@ -23,7 +23,8 @@ function ContactUs() {
           CV5 6NF
         </address>
 
-        <p>The hall is circled in red on the map below (located just behind the Church)</p>
+        <p>The hall is circled in red on the map below (located just behind the Church).
+        There is limited parking on site, and further parking spaces on Albany Road and Earlsdon Street.</p>
 
         {/* ✅ Map image below with extra spacing above */}
         <img 

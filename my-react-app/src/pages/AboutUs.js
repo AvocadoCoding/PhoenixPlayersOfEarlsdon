@@ -13,7 +13,7 @@ import WendyImg from '../assets/images/members/Wendy.JPG';
 
 const members = [
   { name: 'Alan', img: AlanImg, bio: 'Versatile actor and set-building enthusiast, brings characters (and sets) to life.' },
-  { name: 'Dave', img: DaveImg, bio: 'Long-time member and director, keeps rehearsals tight and productions on time.' },
+  { name: 'Dave', img: DaveImg, bio: 'Long time member and director, keeps rehearsals tight and productions on time.' },
   { name: 'Jan', img: JanImg, bio: 'Props and costumes wizard; if it sparkles or fits perfectly, it’s probably Jan.' },
   { name: 'Jane', img: JaneImg, bio: 'Behind the scenes manager; keeps the logistics running like clockwork.' },
   { name: 'Jennie', img: JennieImg, bio: 'Energetic actress and treasurer, keeps the plays and books balanced.' },
