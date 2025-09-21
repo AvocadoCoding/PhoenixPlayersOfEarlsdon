@@ -1,12 +1,12 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 
-function Bookings() {
+function Tickets() {
   return (
     <div>
       <Navbar />
       <div className="page-content" style={{ padding: '1rem' }}>
-        <h2>Bookings</h2>
+        <h2>Tickets</h2>
         <p>Tickets £10 on the door. Please note we are only able to accept cash at this time.</p>
 
         <p>Play runs from Wednesday 29th October to Friday 31st October.</p>
@@ -19,4 +19,4 @@ function Bookings() {
   );
 }
 
-export default Bookings;
+export default Tickets;

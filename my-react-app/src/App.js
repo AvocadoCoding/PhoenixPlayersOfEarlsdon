@@ -1,8 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+
 
 import Home from './pages/Home';
-import Bookings from './pages/Bookings';
+import Tickets from './pages/Tickets';
 import Gallery from './pages/Gallery';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
@@ -16,10 +17,13 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/bookings" element={<Bookings />} />
+          <Route path="/tickets" element={<Tickets />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<ContactUs />} />
+
+          {/* Redirect old path to the new one */}
+          <Route path="/bookings" element={<Navigate to="/tickets" replace />} />
         </Routes>
       </div>
     </Router>
