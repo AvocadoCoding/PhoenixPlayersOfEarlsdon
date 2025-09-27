@@ -12,7 +12,7 @@ function Navbar() {
         </Link>
       </div>
       <div className="navbar-links">
-        <Link to="/bookings">Tickets</Link>
+        <Link to="/tickets">Tickets</Link>
         <Link to="/about">About</Link>
         <Link to="/gallery">Gallery</Link>
         <Link to="/contact">Contact</Link>
