@@ -19,7 +19,7 @@ const members = [
   { name: 'Jennie', img: JennieImg, bio: 'Energetic actress and treasurer, keeps the plays and books balanced.' },
   { name: 'John', img: JohnImg, bio: 'Resident lighting and audio technician; creates and brings the ambience.' },
   { name: 'Paul', img: PaulImg, bio: 'Long time member and experienced actor.' },
-  { name: 'Sarah', img: SarahImg, bio: 'Natural lead and actress; shines on stage.' },
+  { name: 'Sarah', img: SarahImg, bio: 'Natural actress; shines on stage.' },
   { name: 'Wendy', img: WendyImg, bio: 'Actress, prompt and tea-urn hero; keeps the script flowing and cups full.' },
 ];
 
