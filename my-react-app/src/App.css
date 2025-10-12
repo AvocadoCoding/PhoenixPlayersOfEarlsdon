@@ -92,3 +92,46 @@ html, body, #root {
 .page-content h2 + .members-grid {
   margin-top: 1rem;
 }
+
+/* Grid wrapper (unchanged) */
+.set-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem;
+  margin: 0.75rem 0 1.5rem;
+}
+
+/* Card: remove inner padding so the image can fully fill */
+.set-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;      /* ensures the image corners match the card */
+  padding: 0;            /* IMPORTANT: no inner white space */
+}
+
+/* Default tile shape for all set photos (you can tweak this) */
+.set-card {
+  aspect-ratio: 4 / 3;   /* default tile ratio for Set2 & Set3 */
+}
+
+/* Make images fill their containers perfectly */
+.set-photo {
+  width: 100%;
+  height: 100%;
+  display: block;        /* removes inline-gap whitespace */
+  object-fit: cover;     /* fill with no letterboxing; cropping as needed */
+}
+
+/* Specific ratios you requested: note index based on [Set2, Set3, Set4, Set5] */
+
+/* Set4: 2048 x 945 (≈ 2.17:1) => it's the 3rd tile */
+.set-grid .set-card:nth-child(3) {
+  aspect-ratio: 2048 / 945;
+}
+
+/* Set5: 2040 x 1530 (≈ 1.333:1) => it's the 4th tile */
+.set-grid .set-card:nth-child(4) {
+  aspect-ratio: 2040 / 1530;
+}
+
