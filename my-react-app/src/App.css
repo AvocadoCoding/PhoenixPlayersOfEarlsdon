@@ -135,3 +135,24 @@ html, body, #root {
   aspect-ratio: 2040 / 1530;
 }
 
+/* --- Sound effect buttons --- */
+.sound-icons {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.sound-btn {
+  background-color: #F1E9D2;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.sound-btn:hover {
+  background-color: #e5d9b8;
+  transform: scale(1.05);
+}

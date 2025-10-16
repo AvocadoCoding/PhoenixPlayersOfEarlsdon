@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Navbar from '../components/Navbar';
 
 import AlanImg from '../assets/images/members/Alan.JPG';
@@ -11,12 +11,15 @@ import PaulImg from '../assets/images/members/Paul.JPG';
 import SarahImg from '../assets/images/members/Sarah.JPG';
 import WendyImg from '../assets/images/members/Wendy.JPG';
 
-// -------- Set-building photos --------
-// Adjust the extensions (.JPG vs .jpg) to exactly match files:
 import Set2 from '../assets/images/set-building/Set2.JPG';
 import Set3 from '../assets/images/set-building/Set3.JPG';
 import Set4 from '../assets/images/set-building/Set4.JPG';
 import Set5 from '../assets/images/set-building/Set5.JPG';
+
+// 🎵 Import sound effects
+import TelephoneSound from '../assets/sound/old-telephone-ringing.mp3';
+import DoorbellSound from '../assets/sound/sound-effect-doorbell-rings-single.mp3';
+import SeasideSound from '../assets/sound/sound-effect-seagulls.mp3'; // fixed extension
 
 const members = [
   { name: 'Alan', img: AlanImg, bio: 'Versatile actor and set-building enthusiast, brings characters (and sets) to life.' },
@@ -33,6 +36,33 @@ const members = [
 const setPhotos = [Set2, Set3, Set4, Set5];
 
 function AboutUs() {
+  // 🔊 Refs for sound elements
+  const telephoneRef = useRef(null);
+  const doorbellRef = useRef(null);
+  const seasideRef = useRef(null);
+
+  // Toggle play/pause for a sound
+  const toggleSound = (audioRef) => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    if (audio.paused) {
+      // Stop all other sounds before playing a new one
+      [telephoneRef, doorbellRef, seasideRef].forEach((ref) => {
+        if (ref.current && ref.current !== audio) {
+          ref.current.pause();
+          ref.current.currentTime = 0;
+        }
+      });
+
+      audio.currentTime = 0;
+      audio.play();
+    } else {
+      audio.pause();
+      audio.currentTime = 0;
+    }
+  };
+
   return (
     <div>
       <Navbar />
@@ -96,6 +126,23 @@ function AboutUs() {
           ))}
         </div>
 
+        <h3>Sound effects</h3>
+        <p>
+          Sound effects can be introduced to fit the plot or help create the ambience! Click the icons below to hear a few examples:
+        </p>
+
+        {/* 🎧 Sound Effect Buttons */}
+        <div className="sound-icons">
+          <button className="sound-btn" onClick={() => toggleSound(telephoneRef)}>☎ Telephone</button>
+          <button className="sound-btn" onClick={() => toggleSound(doorbellRef)}>🔔 Doorbell</button>
+          <button className="sound-btn" onClick={() => toggleSound(seasideRef)}>🌊 Seaside</button>
+
+          {/* Hidden audio elements */}
+          <audio ref={telephoneRef} src={TelephoneSound} />
+          <audio ref={doorbellRef} src={DoorbellSound} />
+          <audio ref={seasideRef} src={SeasideSound} />
+        </div>
+
         <h2>Current Members</h2>
 
         {/* Members grid */}
@@ -114,3 +161,5 @@ function AboutUs() {
 }
 
 export default AboutUs;
+
+
