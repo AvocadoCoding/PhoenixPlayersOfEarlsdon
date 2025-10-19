@@ -21,6 +21,10 @@ import TelephoneSound from '../assets/sound/old-telephone-ringing.mp3';
 import DoorbellSound from '../assets/sound/sound-effect-doorbell-rings-single.mp3';
 import SeasideSound from '../assets/sound/sound-effect-seagulls.mp3'; // fixed extension
 
+// 💡 Import lighting images
+import Lighting1 from '../assets/images/lighting/1.JPG';
+import Lighting2 from '../assets/images/lighting/2.JPG';
+
 const members = [
   { name: 'Alan', img: AlanImg, bio: 'Versatile actor and set-building enthusiast, brings characters (and sets) to life.' },
   { name: 'Dave', img: DaveImg, bio: 'Long time member and director, keeps rehearsals tight and productions on time.' },
@@ -144,6 +148,21 @@ function AboutUs() {
           <audio ref={seasideRef} src={SeasideSound} />
         </div>
 
+        {/* 💡 Lighting section */}
+        <h3>Lighting</h3>
+        <p>
+          Lighting effects can be used to set the mood and draw attention to different parts of the stage.
+        </p>
+
+        <div className="lighting-grid">
+          <figure className="lighting-card">
+            <img src={Lighting1} alt="Lighting effect 1" className="lighting-photo" loading="lazy" />
+          </figure>
+          <figure className="lighting-card">
+            <img src={Lighting2} alt="Lighting effect 2" className="lighting-photo" loading="lazy" />
+          </figure>
+        </div>
+
         <br />
         <h2>Current Members</h2>
 
@@ -163,6 +182,7 @@ function AboutUs() {
 }
 
 export default AboutUs;
+
 
 
 
