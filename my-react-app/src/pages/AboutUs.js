@@ -94,6 +94,7 @@ function AboutUs() {
         </p>
 
         {/* NEW: What we do */}
+        <br />
         <h2>What we do</h2>
         <p>
           Preparing a play involves many aspects in addition to choosing a script,
@@ -143,6 +144,7 @@ function AboutUs() {
           <audio ref={seasideRef} src={SeasideSound} />
         </div>
 
+        <br />
         <h2>Current Members</h2>
 
         {/* Members grid */}
@@ -161,5 +163,6 @@ function AboutUs() {
 }
 
 export default AboutUs;
+
 
 
