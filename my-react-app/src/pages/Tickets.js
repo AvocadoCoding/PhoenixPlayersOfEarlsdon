@@ -9,7 +9,7 @@ function Tickets() {
         <h2>Tickets</h2>
         <p>Tickets £10 on the door. Please note we are only able to accept cash at this time.</p>
 
-        <p>Play runs from Wednesday 29th October to Friday 31st October.</p>
+        <p>Play runs from Wednesday 28th January to Friday 30th January.</p>
 
         <p>Doors open at 7pm, curtain at 7.30pm.</p>
 
