@@ -3,17 +3,50 @@ import Navbar from '../components/Navbar';
 import Map from '../assets/images/Map.png';  // ✅ Import image
 
 function ContactUs() {
+  // Build email dynamically (not present in static HTML)
+  const user = "phoenixplayers-earlsdon";
+  const domain = "hotmail";
+  const tld = "com";
+  const email = `${user}@${domain}.${tld}`;
+
+  const handleEmailClick = () => {
+    // Optional: add subject/body via query params if you want
+    // const params = new URLSearchParams({ subject: "Enquiry" }).toString();
+    // window.location.href = `mailto:${email}?${params}`;
+    window.location.href = `mailto:${email}`;
+  };
+
+  const linkBtn = {
+    background: "none",
+    border: "none",
+    padding: 0,
+    margin: 0,
+    color: "#0b57d0",
+    textDecoration: "underline",
+    cursor: "pointer",
+    font: "inherit"
+  };
+
   return (
     <div>
       <Navbar />
       <div className="page-content" style={{ padding: '1rem' }}>
         <h2>Contact Us</h2>
+
         <p>
-          If you're interested in joining or for any other enquiries please e-mail us as at <a href="phoenixplayers-earlsdon@hotmail.com">phoenixplayers-earlsdon@hotmail.com</a>.
+          If you're interested in joining or for any other enquiries please e-mail us at{" "}
+          <button
+            type="button"
+            onClick={handleEmailClick}
+            style={linkBtn}
+            aria-label={`Email ${email}`}
+          >
+            {email}
+          </button>.
         </p>
 
         <p>The group rehearsals and plays are located at the Methodist Church Hall in Earlsdon:</p>
-        
+
         {/* ✅ Semantic postal address */}
         <address style={{ fontStyle: 'normal', lineHeight: '1.6' }}>
           Earlsdon Methodist<br />
@@ -23,13 +56,15 @@ function ContactUs() {
           CV5 6NF
         </address>
 
-        <p>The hall is circled in red on the map below (located just behind the Church).
-        There is limited parking on site, and further parking spaces on Albany Road and Earlsdon Street.</p>
+        <p>
+          The hall is circled in red on the map below (located just behind the Church).
+          There is limited parking on site, and further parking spaces on Albany Road and Earlsdon Street.
+        </p>
 
         {/* ✅ Map image below with extra spacing above */}
-        <img 
-          src={Map} 
-          alt="Map showing location of Methodist Church Hall in Earlsdon" 
+        <img
+          src={Map}
+          alt="Map showing location of Methodist Church Hall in Earlsdon"
           style={{ width: '100%', maxWidth: '600px', marginTop: '2rem', marginBottom: '1rem' }}
         />
       </div>
