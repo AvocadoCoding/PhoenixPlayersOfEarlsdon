@@ -11,7 +11,8 @@ function Tickets() {
 
         <p>Play runs from Wednesday 29th April to Friday 1st May.</p>
 
-        <p>Doors open at 7pm, curtain at 7.30pm.</p>
+        <p>Wednesday and Friday- Doors 7pm and curtain at 7.30pm.</p>
+        <p>Thursday- Doors 7.15pm and curtain at 7.45pm.</p>
 
         <p>To reserve tickets please call 07977799128 / 07549168791</p>
       </div>
